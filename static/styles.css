@@ -1,0 +1,28 @@
+:root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, sans-serif; background: #07110f; color: #f2f7f5; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 80% 0%, #17483c 0, transparent 36%), #07110f; }
+main { width: min(1080px, calc(100% - 32px)); margin: 0 auto; padding: 64px 0; }
+header, .panel-heading { display: flex; justify-content: space-between; gap: 24px; align-items: flex-start; }
+h1 { font-size: clamp(2.5rem, 7vw, 5rem); margin: 4px 0 8px; letter-spacing: -.06em; }
+h2 { margin: 4px 0 0; font-size: 1.7rem; }
+p { color: #a9bbb5; }
+.eyebrow { color: #59e3ae; font-size: .72rem; font-weight: 800; letter-spacing: .15em; margin: 0; }
+.subtitle { font-size: 1.05rem; max-width: 560px; }
+.status { padding: 10px 14px; border: 1px solid #35534a; border-radius: 999px; color: #b8c9c3; white-space: nowrap; }
+.status.online { color: #59e3ae; border-color: #23865f; }
+.summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 48px 0 20px; }
+.card, .panel { background: rgba(15, 32, 28, .82); border: 1px solid #233e36; border-radius: 20px; }
+.card { padding: 24px; }
+.card span { display: block; color: #a9bbb5; }
+.card strong { display: block; font-size: 3.6rem; line-height: 1; margin-top: 22px; }
+.free strong { color: #59e3ae; } .occupied strong { color: #ff796b; }
+.panel { padding: 28px; }
+.panel-heading p { margin-top: 8px; }
+.spaces { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 12px; margin-top: 30px; }
+.space { border-radius: 14px; padding: 18px; border: 1px solid; }
+.space strong { display: block; margin-bottom: 6px; }
+.space.free { background: #102f27; border-color: #287b5d; color: #69efba; }
+.space.occupied { background: #331b1b; border-color: #77403b; color: #ff8d81; }
+.empty { text-align: center; padding: 40px 0 20px; }
+@media (max-width: 680px) { main { padding-top: 32px; } header, .panel-heading { display: block; } .status { display: inline-block; margin-top: 12px; } .summary { grid-template-columns: 1fr; } .card strong { font-size: 2.8rem; } }
+

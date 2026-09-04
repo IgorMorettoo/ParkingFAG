@@ -1,0 +1,2 @@
+"""Nucleo da aplicacao SmartParking."""
+
