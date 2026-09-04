@@ -1,0 +1,30 @@
+name: Tarefa do projeto
+description: Planejar uma alteracao antes de iniciar a implementacao
+title: "[Tarefa]: "
+labels: ["tarefa"]
+body:
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: Objetivo
+      description: Qual resultado deve ser entregue?
+    validations:
+      required: true
+  - type: textarea
+    id: aceite
+    attributes:
+      label: Critérios de aceite
+      description: Liste comportamentos objetivos e testáveis.
+      placeholder: |
+        - [ ] Critério 1
+        - [ ] Critério 2
+    validations:
+      required: true
+  - type: textarea
+    id: testes
+    attributes:
+      label: Evidências e testes
+      description: Como a equipe demonstrará que a tarefa funciona?
+    validations:
+      required: true
+

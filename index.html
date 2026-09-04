@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SmartParking</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <p class="eyebrow">MONITORAMENTO EM TEMPO REAL</p>
+          <h1>SmartParking</h1>
+          <p class="subtitle">Consulte a disponibilidade antes de chegar ao estacionamento.</p>
+        </div>
+        <span id="connection" class="status">Conectando...</span>
+      </header>
+      <section class="summary" aria-label="Resumo da ocupacao">
+        <article class="card free"><span>Vagas livres</span><strong id="free">--</strong></article>
+        <article class="card occupied"><span>Vagas ocupadas</span><strong id="occupied">--</strong></article>
+        <article class="card total"><span>Total monitorado</span><strong id="total">--</strong></article>
+      </section>
+      <section class="panel">
+        <div class="panel-heading">
+          <div><p class="eyebrow">MAPA DE VAGAS</p><h2>Situação atual</h2></div>
+          <p id="updated">Aguardando a primeira leitura...</p>
+        </div>
+        <div id="spaces" class="spaces" aria-live="polite"></div>
+        <p id="empty" class="empty">Nenhuma leitura recebida até o momento.</p>
+      </section>
+    </main>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
