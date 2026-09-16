@@ -1,8 +1,47 @@
+# Python
 __pycache__/
 *.py[cod]
-.env
+*$py.class
+
+# Ambientes virtuais
 .venv/
+venv/
+env/
+ENV/
+
+# Variáveis de ambiente / segredos
+.env
+.env.local
+.env.*.local
+
+# Pytest / cobertura
 .pytest_cache/
 .coverage
+.coverage.*
 htmlcov/
 
+# Cache de ferramentas
+.mypy_cache/
+.ruff_cache/
+
+# IDEs / editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Build / distribuição Python
+build/
+dist/
+*.egg-info/
